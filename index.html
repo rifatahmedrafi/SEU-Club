@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEU Club — University Club Membership Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-club sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark">S</span>
+        SEU Club
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#activities">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-join-nav btn-sm px-3" href="form.html">Join Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">University Club Membership Portal</p>
+          <h1 class="mb-3">A home base for every club you're part of on campus</h1>
+          <p class="lede mb-4">
+            SEU Club brings registration, events, and member records into one
+            place, so joining a society takes minutes, not a trip to five
+            different offices.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="form.html" class="btn btn-primary-club">Join Now</a>
+            <a href="#activities" class="btn btn-secondary-club">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-badges" aria-hidden="true">
+            <div class="badge-tile"><i class="bi bi-code-slash"></i></div>
+            <div class="badge-tile"><i class="bi bi-camera"></i></div>
+            <div class="badge-tile"><i class="bi bi-mic"></i></div>
+            <div class="badge-tile"><i class="bi bi-palette"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="stats-strip py-4">
+    <div class="container">
+      <div class="row text-center gy-3">
+        <div class="col-6 col-md-3">
+          <div class="stat-num">10</div>
+          <div class="stat-label">Active clubs</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">1,200+</div>
+          <div class="stat-label">Members</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">40+</div>
+          <div class="stat-label">Events a year</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-num">7</div>
+          <div class="stat-label">Campuses covered</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="activities">
+    <div class="container">
+      <div class="section-heading mb-5">
+        <p class="eyebrow mb-2">What's on</p>
+        <h2 class="mb-3">Upcoming activities across our clubs</h2>
+        <p>
+          A running list of what member clubs are organising this term —
+          workshops, showcases, and socials open to every registered member.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="club-card">
+            <div class="card-icon"><i class="bi bi-laptop"></i></div>
+            <h3>Code Club: Hack Night</h3>
+            <p>
+              A weekly build session for the Programming Club — bring a
+              project or join a team building one from scratch.
+            </p>
+            <a href="form.html" class="btn btn-card">Reserve a seat</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="club-card">
+            <div class="card-icon"><i class="bi bi-camera2"></i></div>
+            <h3>Photography Walk</h3>
+            <p>
+              The Lens Society leads a golden-hour walk around campus,
+              open to beginners with any camera or phone.
+            </p>
+            <a href="form.html" class="btn btn-card">Reserve a seat</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="club-card">
+            <div class="card-icon"><i class="bi bi-mic"></i></div>
+            <h3>Debate Society Finals</h3>
+            <p>
+              The inter-department debate finals, with judges from the
+              faculty of law and a reception straight after.
+            </p>
+            <a href="form.html" class="btn btn-card">Reserve a seat</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="club-card">
+            <div class="card-icon"><i class="bi bi-mic"></i></div>
+            <h3>Debate Society Finals</h3>
+            <p>
+              The inter-department debate finals, with judges from the
+              faculty of law and a reception straight after.
+            </p>
+            <a href="form.html" class="btn btn-card">Reserve a seat</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="club-card">
+            <div class="card-icon"><i class="bi bi-mic"></i></div>
+            <h3>Debate Society Finals</h3>
+            <p>
+              The inter-department debate finals, with judges from the
+              faculty of law and a reception straight after.
+            </p>
+            <a href="form.html" class="btn btn-card">Reserve a seat</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="club-card">
+            <div class="card-icon"><i class="bi bi-mic"></i></div>
+            <h3>Debate Society Finals</h3>
+            <p>
+              The inter-department debate finals, with judges from the
+              faculty of law and a reception straight after.
+            </p>
+            <a href="form.html" class="btn btn-card">Reserve a seat</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section" id="about" style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <p class="eyebrow mb-2">About the portal</p>
+          <h2 class="mb-3">One membership, every club</h2>
+          <p class="text-muted">
+            Register once and your details carry over to any club you join —
+            no more filling the same paper form for the fourth society this
+            year. Club leads see who's coming to an event before it starts,
+            and members get one inbox for every update.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <ul class="list-unstyled d-grid gap-3">
+            <li class="d-flex gap-3">
+              <i class="bi bi-check2-circle fs-4" style="color: var(--gold);"></i>
+              <span>Single sign-up form works across all member clubs.</span>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-check2-circle fs-4" style="color: var(--gold);"></i>
+              <span>Instant confirmation, no waiting on office hours.</span>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-check2-circle fs-4" style="color: var(--gold);"></i>
+              <span>Built and maintained by student volunteers.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-club" id="contact">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <h5>SEU Club</h5>
+          <p class="small mb-0">
+            The membership portal connecting every registered student
+            society on campus.
+          </p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h5>Links</h5>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="form.html">Join Now</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <h5>Contact</h5>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><i class="bi bi-envelope me-2"></i>hello@seuclub.edu</li>
+            <li><i class="bi bi-telephone me-2"></i>+880 1XXX-XXXXXX</li>
+            <li><i class="bi bi-geo-alt me-2"></i>Student Activity Center, Room 204</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h5>Follow along</h5>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

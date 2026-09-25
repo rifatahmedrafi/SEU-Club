@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join a Club — SEU Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-club sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-mark">S</span>
+        SEU Club
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#activities">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-join-nav btn-sm px-3 active" href="form.html">Join Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="form-header">
+    <div class="container">
+      <p class="eyebrow mb-2" style="color: var(--gold); font-weight:600;">Membership registration</p>
+      <h1 class="mb-2">Join a club</h1>
+      <p class="mb-0">
+        Fill in your details once — this membership record works across
+        every club listed on the portal. No backend is connected here; the
+        form validates and summarises your entry on this page.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="success-panel mb-4" id="successPanel">
+            <h2><i class="bi bi-check-circle-fill me-2"></i>You're registered!</h2>
+            <p class="text-muted">Here's a summary of what you submitted.</p>
+            <table class="table summary-table mb-3">
+              <tbody id="summaryBody"></tbody>
+            </table>
+            <button type="button" class="btn btn-primary-club" id="editAgainBtn">Edit my details</button>
+          </div>
+
+          <form class="form-card" id="membershipForm" novalidate>
+
+            
+            <div class="mb-4 field-wrap" id="wrap-fullName">
+              <label for="fullName" class="form-label">Full name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" placeholder="e.g. Rifat Ahmed" />
+              <div class="field-error">Please enter your full name (at least 3 characters).</div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4 field-wrap" id="wrap-email">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@university.edu" />
+                <div class="field-error">Please enter a valid email address.</div>
+              </div>
+
+              <div class="col-md-6 mb-4 field-wrap" id="wrap-phone">
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="01XXXXXXXXX" />
+                <div class="form-text form-text-hint">11 digits, starting with 01.</div>
+                <div class="field-error">Enter an 11-digit phone number starting with 01.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4 field-wrap" id="wrap-password">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="At least 8 characters" />
+                <div class="form-text form-text-hint">Minimum 8 characters, with at least one letter and one number.</div>
+                <div class="field-error">Password needs 8+ characters, with a letter and a number.</div>
+              </div>
+
+              <div class="col-md-6 mb-4 field-wrap" id="wrap-confirmPassword">
+                <label for="confirmPassword" class="form-label">Confirm password</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password" />
+                <div class="field-error">This must match the password above.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4 field-wrap" id="wrap-dob">
+                <label for="dob" class="form-label">Date of birth</label>
+                <input type="date" class="form-control" id="dob" name="dob" />
+                <div class="field-error">Enter your date of birth (you must be 16 or older).</div>
+              </div>
+
+              <div class="col-md-6 mb-4 field-wrap" id="wrap-club">
+                <label for="club" class="form-label">Club to join</label>
+                <select class="form-select" id="club" name="club">
+                  <option value="" selected disabled>Choose a club</option>
+                  <option value="programming">Programming Club</option>
+                  <option value="photography">Lens Photography Society</option>
+                  <option value="debate">Debate Society</option>
+                  <option value="music">Music Circle</option>
+                </select>
+                <div class="field-error">Please select a club.</div>
+              </div>
+            </div>
+
+            
+            <fieldset class="field-group mb-4 field-wrap" id="wrap-membershipType">
+              <legend>Membership type</legend>
+              <div class="d-flex flex-wrap gap-4 mt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="membershipType" id="typeStandard" value="Standard" />
+                  <label class="form-check-label" for="typeStandard">Standard — free</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="membershipType" id="typePremium" value="Premium" />
+                  <label class="form-check-label" for="typePremium">Premium — 500 BDT/term</label>
+                </div>
+              </div>
+              <div class="field-error">Please choose a membership type.</div>
+            </fieldset>
+
+           
+            <fieldset class="field-group mb-4 field-wrap" id="wrap-interests">
+              <legend>Interests (select at least one)</legend>
+              <div class="row mt-2">
+                <div class="col-6 col-md-3 form-check">
+                  <input class="form-check-input" type="checkbox" name="interests" id="intWorkshops" value="Workshops" />
+                  <label class="form-check-label" for="intWorkshops">Workshops</label>
+                </div>
+                <div class="col-6 col-md-3 form-check">
+                  <input class="form-check-input" type="checkbox" name="interests" id="intEvents" value="Events" />
+                  <label class="form-check-label" for="intEvents">Events</label>
+                </div>
+                <div class="col-6 col-md-3 form-check">
+                  <input class="form-check-input" type="checkbox" name="interests" id="intCompetitions" value="Competitions" />
+                  <label class="form-check-label" for="intCompetitions">Competitions</label>
+                </div>
+                <div class="col-6 col-md-3 form-check">
+                  <input class="form-check-input" type="checkbox" name="interests" id="intVolunteer" value="Volunteering" />
+                  <label class="form-check-label" for="intVolunteer">Volunteering</label>
+                </div>
+              </div>
+              <div class="field-error">Pick at least one interest.</div>
+            </fieldset>
+
+            
+            <div class="mb-4 field-wrap" id="wrap-bio">
+              <label for="bio" class="form-label">Tell us why you're joining</label>
+              <textarea class="form-control" id="bio" name="bio" rows="3" placeholder="A sentence or two is enough"></textarea>
+              <div class="field-error">Please write at least 10 characters.</div>
+            </div>
+
+            
+            <div class="mb-4 field-wrap" id="wrap-photo">
+              <label for="photo" class="form-label">Profile photo (optional)</label>
+              <input type="file" class="form-control" id="photo" name="photo" accept="image/*" />
+              <div class="form-text form-text-hint">JPG or PNG, used on your member card.</div>
+              <div class="field-error">Please upload a JPG or PNG file.</div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <button type="submit" class="btn btn-primary-club">Submit registration</button>
+              <button type="reset" class="btn btn-secondary-club" style="color: var(--navy); border-color: var(--navy);" id="resetBtn">Reset form</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer-club">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <h5>SEU Club</h5>
+          <p class="small mb-0">The membership portal connecting every registered student society on campus.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5>Links</h5>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#activities">Activities</a></li>
+            <li><a href="form.html">Join Now</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5>Contact</h5>
+          <ul class="list-unstyled small d-grid gap-2">
+            <li><i class="bi bi-envelope me-2"></i>hello@seuclub.edu</li>
+            <li><i class="bi bi-telephone me-2"></i>+880 1XXX-XXXXXX</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h5>Follow along</h5>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>
